@@ -66,16 +66,15 @@ header .back-to-home:hover {
     border-radius: 8px; /* Optional: Rounded corners for the background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow for aesthetic effect */
     text-align: center; /* Center-align content */
-    margin: 10px; /* Space between scrapbook items */
+    margin: 20px; /* Space between scrapbook items */
 }
 
 .scrapbook-item img {
     max-width: 100%;
-    max-height: 400px;
+    max-height: 500px;
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for aesthetics */
-    margin-bottom: 10px;
 }
 
 .caption {
@@ -89,7 +88,7 @@ header .back-to-home:hover {
     .scrapbook {
         grid-template-columns: 1fr; /* Switch to single column on mobile */
     }
-
+    
     .main-content {
         width: 100%; /* Main content takes full width */
         padding-bottom: 4rem; /* Increase bottom padding for mobile */
