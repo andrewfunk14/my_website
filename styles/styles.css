@@ -1,0 +1,132 @@
+/* General Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it takes the full height of the viewport */
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    text-align: center;
+    font-size: 1.5rem; /* Slightly larger font for desktop */
+    font-weight: bold;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    flex-direction: row; /* Sidebar and content in a row */
+    flex-grow: 1; /* Allow it to grow to fill the remaining space */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 25%; /* Sidebar takes up 25% of the screen */
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    padding: 1rem;
+    text-align: center; /* Center-align the text inside the sidebar */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1; /* Fills remaining space */
+    background-color: #f9f9f9; /* Light background for separation */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align pictures horizontally */
+    justify-content: flex-start; /* Ensure content starts at the top */
+}
+
+/* Collage Grid */
+.collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Larger grid cells for desktop */
+    gap: 20px; /* Space between images */
+    margin: 0 auto; /* Center-align collage container */
+    max-width: 1200px; /* Optional: Limit the width of the grid */
+    padding: 20px; /* Add padding around the grid */
+    justify-content: center; /* Ensures the grid is centered */
+}
+
+.collage img {
+    width: 100%; /* Image fully fills the grid cell */
+    max-width: 400px; /* Set a max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center-align each image */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for aesthetics */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack sidebar and content vertically */
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar takes full width on mobile */
+    }
+
+    .main-content {
+        width: 100%; /* Main content takes full width */
+    }
+
+    .collage {
+        grid-template-columns: 1fr; /* Stack images in a single column */
+    }
+
+    .collage img {
+        max-width: 300px; /* Reduce max width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Smaller font size for header */
+    }
+
+    .sidebar a {
+        padding: 8px; /* Smaller padding for touch targets */
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+
+    .collage img {
+        max-width: 300px; /* Further reduce max width for very small screens */
+    }
+}
