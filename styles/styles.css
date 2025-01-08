@@ -108,6 +108,7 @@ header {
 
     .main-content {
         width: 100%; /* Main content takes full width */
+        padding-bottom: 4rem; /* Increase bottom padding for mobile */
     }
 
     .collage {
@@ -127,6 +128,11 @@ header {
     .sidebar a {
         padding: 8px; /* Smaller padding for touch targets */
         font-size: 0.9rem; /* Slightly smaller font size */
+    }
+
+    .main-content {
+        width: 100%; /* Main content takes full width */
+        padding-bottom: 4rem; /* Increase bottom padding for mobile */
     }
 
     .collage img {

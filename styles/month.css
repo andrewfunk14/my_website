@@ -89,4 +89,9 @@ header .back-to-home:hover {
     .scrapbook {
         grid-template-columns: 1fr; /* Switch to single column on mobile */
     }
+    
+    .main-content {
+        width: 100%; /* Main content takes full width */
+        padding-bottom: 4rem; /* Increase bottom padding for mobile */
+    }
 }
