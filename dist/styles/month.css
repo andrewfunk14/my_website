@@ -48,6 +48,7 @@ header .back-to-home:hover {
     color: white; /* White text for contrast */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds depth */
     text-align: center; /* Centers text and content */
+    padding-bottom: 2rem; /* Add space at the bottom */
 }
 
 /* Scrapbook Layout */
